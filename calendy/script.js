@@ -20,9 +20,17 @@ for (let index = lastYearDaysToFill; index > 0; index--) {
     daysTag.append(el);
 }
 
+function loopThroughDates(start, end, fn) {
+    let loopDate = new Date(start);
+    while (loopDate <= end) {
+        fn(loopDate);
+        let newDate = loopDate.setDate(loopDate.getDate() + 1);
+        loopDate = new Date(newDate);
+    }
+}
 
-let loopDate = new Date(start);
-while (loopDate <= end) {
+
+loopThroughDates(start, end, function(loopDate) {
     el = $('<div>')
         .addClass('col-md-1 cell')
         .attr('data-date', loopDate.toISOString().split('T')[0]);
@@ -33,47 +41,40 @@ while (loopDate <= end) {
         .addClass('row doodles');
     el.append(dayElement).append(doodlesElement);
     daysTag.append(el);
-    let newDate = loopDate.setDate(loopDate.getDate() + 1);
-    loopDate = new Date(newDate);
-}
+});
 
 
 // DATA POPULATION
 
-function dateElement(day, month) {
+
+function dateElement(date) {
+    day = date.getDate();
+    month = date.getMonth() + 1;
     date = year + '-' + month.toString().padStart(2, "0") + '-' + day.toString().padStart(2, "0");
     tag = '[data-date="' + date + '"]';
     return $(tag);
 }
 
 function fillCountry(countryObjArrival, countryObjDeparture) {
-    // addDoodle('airplane', dateObj(11, 3));
-    addDoodle('airplane', dateObj(countryObjArrival.date.getDate(), countryObjArrival.date.getMonth() + 1));
-
-
-    let loopDate = countryObjArrival.date;
-    while (loopDate <= countryObjDeparture.date) {
-        dateElement(loopDate.getDate(), loopDate.getMonth() + 1)
+    addDoodle('airplane', countryObjArrival.date);
+    loopThroughDates(countryObjArrival.date, countryObjDeparture.date, function(loopDate) {
+        dateElement(loopDate)
             .addClass('flag')
             .addClass('flag-' + countryObjArrival.country);
-        let newDate = loopDate.setDate(loopDate.getDate() + 1);
-        loopDate = new Date(newDate);
-    }
+    })
 }
 
 function dateObj(day, month) {
-    return {
-        day: day,
-        month: month
-    }
+    return new Date(month + "/" + day + "/" + year + " 00:00:00+00");
 }
 
 function countryObj(arr) {
     return {
         country: arr[0],
-        date: new Date(arr[2] + "/" + arr[1] + "/" + year + " 00:00:00+00")
+        date: dateObj(arr[1], arr[2])
     }
 }
+
 travels = [
     ['egypt', 1, 1],
     ['austria', 10, 1],
@@ -103,12 +104,12 @@ function addDoodle(badge, start, end) {
     if (!end) {
         end = start;
     }
-    for (let index = start.day; index <= end.day; index++) {
+    loopThroughDates(start, end, function(loopDate) {
         el = $('<div>')
             .addClass('doodle')
             .addClass('doodle-' + badge);
-        dateElement(index, start.month).children('.doodles').append(el);
-    }
+        dateElement(loopDate).children('.doodles').append(el);
+    });
 }
 
 
@@ -118,4 +119,4 @@ addDoodle('dancing', dateObj(25, 3), dateObj(27, 3));
 addDoodle('pager', dateObj(1, 3), dateObj(6, 3));
 addDoodle('pager', dateObj(14, 3), dateObj(20, 3));
 
-$(dateElement(10, 3)).addClass("today");
+//     $(dateElement(10, 3)).addClass("today");
