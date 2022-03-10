@@ -27,7 +27,7 @@ while (loopDate <= end) {
         .addClass('col-md-1 cell')
         .attr('data-date', loopDate.toISOString().split('T')[0]);
     dayElement = $('<div>')
-        .addClass('row')
+        .addClass('row day-number')
         .text(loopDate.getDate());
     doodlesElement = $('<div>')
         .addClass('row doodles');
@@ -40,48 +40,82 @@ while (loopDate <= end) {
 
 // DATA POPULATION
 
-function dateElement(date) {
-    day = '2022-03-' + date.toString().padStart(2, "0");
-    tag = '[data-date="' + day + '"]';
+function dateElement(day, month) {
+    date = year + '-' + month.toString().padStart(2, "0") + '-' + day.toString().padStart(2, "0");
+    tag = '[data-date="' + date + '"]';
     return $(tag);
 }
 
-function fillCountry(country, start, end) {
-    for (let index = start; index <= end; index++) {
-        dateElement(index)
+function fillCountry(countryObjArrival, countryObjDeparture) {
+    // addDoodle('airplane', dateObj(11, 3));
+    addDoodle('airplane', dateObj(countryObjArrival.date.getDate(), countryObjArrival.date.getMonth() + 1));
+
+
+    let loopDate = countryObjArrival.date;
+    while (loopDate <= countryObjDeparture.date) {
+        dateElement(loopDate.getDate(), loopDate.getMonth() + 1)
             .addClass('flag')
-            .addClass('flag-' + country);
+            .addClass('flag-' + countryObjArrival.country);
+        let newDate = loopDate.setDate(loopDate.getDate() + 1);
+        loopDate = new Date(newDate);
     }
 }
+
+function dateObj(day, month) {
+    return {
+        day: day,
+        month: month
+    }
+}
+
+function countryObj(arr) {
+    return {
+        country: arr[0],
+        date: new Date(arr[2] + "/" + arr[1] + "/" + year + " 00:00:00+00")
+    }
+}
+travels = [
+    ['egypt', 1, 1],
+    ['austria', 10, 1],
+    ['sweden', 26, 1],
+    ['sweden', 1, 2],
+    ['austria', 15, 2],
+    ['sweden', 27, 2],
+    ['poland', 11, 3],
+    ['sweden', 14, 3],
+    ['austria', 20, 3],
+    ['undecided', 29, 3],
+    ['croatia', 6, 6],
+    ['undecided', 12, 6],
+];
+for (let index = 0; index < travels.length; index++) {
+    countryObjArrival = countryObj(travels[index]);
+    if (travels[index + 1] !== undefined) {
+        countryObjDeparture = countryObj(travels[index + 1]);
+    } else {
+        countryObjDeparture = countryObj(['blank', 31, 12]);
+    }
+    fillCountry(countryObjArrival, countryObjDeparture);
+}
+
 
 function addDoodle(badge, start, end) {
     if (!end) {
         end = start;
     }
-    for (let index = start; index <= end; index++) {
+    for (let index = start.day; index <= end.day; index++) {
         el = $('<div>')
             .addClass('doodle')
             .addClass('doodle-' + badge);
-        dateElement(index).children('.doodles').append(el);
+        dateElement(index, start.month).children('.doodles').append(el);
     }
 }
 
 
-fillCountry('sweden', 1, 10);
-fillCountry('poland', 11, 14);
-fillCountry('sweden', 15, 19);
-fillCountry('austria', 20, 27);
-fillCountry('sweden', 28, 31);
+addDoodle('dancing', dateObj(11, 3), dateObj(13, 3));
+addDoodle('dancing', dateObj(25, 3), dateObj(27, 3));
 
-addDoodle('airplane', 11);
-addDoodle('airplane', 14);
-addDoodle('airplane', 20);
+addDoodle('pager', dateObj(1, 3), dateObj(6, 3));
+addDoodle('pager', dateObj(14, 3), dateObj(20, 3));
 
-
-addDoodle('dancing', 11, 13);
-addDoodle('dancing', 25, 27);
-
-addDoodle('pager', 1, 6);
-addDoodle('pager', 14, 20);
-
-$(dateElement(10)).addClass("today");
+$(dateElement(10, 3)).addClass("today");

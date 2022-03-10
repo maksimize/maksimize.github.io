@@ -6,12 +6,16 @@
     background: rgb(200, 200, 200);
 }
 
+.day-number {
+    padding-left: 10px;
+}
+
 .days .cell {
     height: 12em;
 }
 
 .today {
-    background-color: royalblue;
+    /* border: 5px solid rgb(255, 0, 0); */
 }
 
 .hidden {
@@ -53,31 +57,40 @@
 /* Flags */
 
 .flag {
-    background-image: url('img/Flag_of_Sweden.svg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .flag-sweden {
     background-image: url('img/Flag_of_Sweden.svg');
-    background-size: cover;
 }
 
 .flag-austria {
     background-image: url('img/Flag_of_Austria.svg');
-    background-size: cover;
 }
 
 .flag-poland {
     background-image: url('img/Flag_of_Poland.svg');
-    background-size: cover;
 }
 
-.doodles {}
+.flag-egypt {
+    background-image: url('img/Flag_of_Egypt.svg');
+}
+
+.flag-croatia {
+    background-image: url('img/Flag_of_Croatia.svg');
+}
+
+.doodles {
+    float: right;
+}
 
 .doodle {
     background-size: cover;
     width: 64px;
     height: 64px;
+    /* margin: 5px; */
 }
 
 .doodle-airplane {
