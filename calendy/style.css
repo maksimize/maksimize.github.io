@@ -6,11 +6,6 @@
     background: rgb(200, 200, 200);
 }
 
-
-/* .header .cell {
-    border: 1px solid black;
-} */
-
 .days .cell {
     height: 12em;
 }
@@ -52,4 +47,47 @@
         max-width: 14.285714285714285714285714285714% !important;
         flex: none !important;
     }
+}
+
+
+/* Flags */
+
+.flag {
+    background-image: url('img/Flag_of_Sweden.svg');
+    background-size: cover;
+}
+
+.flag-sweden {
+    background-image: url('img/Flag_of_Sweden.svg');
+    background-size: cover;
+}
+
+.flag-austria {
+    background-image: url('img/Flag_of_Austria.svg');
+    background-size: cover;
+}
+
+.flag-poland {
+    background-image: url('img/Flag_of_Poland.svg');
+    background-size: cover;
+}
+
+.doodles {}
+
+.doodle {
+    background-size: cover;
+    width: 64px;
+    height: 64px;
+}
+
+.doodle-airplane {
+    background-image: url('img/airplane.png');
+}
+
+.doodle-dancing {
+    background-image: url('img/dancing.png');
+}
+
+.doodle-pager {
+    background-image: url('img/pager.png');
 }
