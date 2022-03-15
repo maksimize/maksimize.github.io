@@ -18,7 +18,7 @@ for (let index = lastYearDaysToFill; index > 0; index--) {
 loopThroughDates(targetYear1stDay, targetYearAfter1stDay, function(loopDate) {
     el = $('<div>')
         .addClass('col-md-1 cell')
-        .attr('data-date', loopDate.toISOString().split('T')[0]);
+        .attr('data-date', loopDate.toISOString().split('T')[0])
     dayElement = $('<div>')
         .addClass('row day-number')
         .text(loopDate.getDate());

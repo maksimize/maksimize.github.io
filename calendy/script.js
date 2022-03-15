@@ -14,7 +14,7 @@ function getTargetYearDate(day, month, yearOffset) {
     } else {
         year = parseInt(queryStringYear) + yearOffset;
     }
-    return new Date(month + "/" + day + "/" + year + " 00:00:00+00");
+    return new Date(month + "/" + day + "/" + year + " 12:00:00+00 UTC");
 }
 
 function loopThroughDates(start, end, fn) {
