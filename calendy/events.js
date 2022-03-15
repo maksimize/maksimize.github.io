@@ -1,20 +1,3 @@
-// const events = [
-//     ['travel', 'egypt', 1, 1],
-//     ['travel', 'austria', 10, 1],
-//     ['travel', 'sweden', 26, 1],
-//     ['travel', 'austria', 15, 2],
-//     ['travel', 'sweden', 27, 2],
-//     ['travel', 'poland', 11, 3],
-//     // ['icon', 'dancing', 11, 3, 13, 3],
-//     ['travel', 'sweden', 14, 3],
-//     ['travel', 'austria', 20, 3],
-//     // ['travel', 'austria', 25, 3, 17, 3],
-//     ['travel', 'sweden', 28, 3],
-//     ['travel', 'croatia', 6, 6],
-//     ['travel', 'undecided', 12, 6],
-// ];
-
-
 const events = {
     travels: [
         ['egypt', 1, 1],
@@ -30,7 +13,7 @@ const events = {
         ['undecided', 12, 6],
 
     ],
-    icons: [
+    doodle: [
         ['pager', 28, 2, 6, 3],
         ['dancing', 11, 3, 13, 3],
         ['pager', 14, 3, 20, 3],
@@ -43,14 +26,13 @@ const events = {
 
 function today() {
     const today = new Date();
-    console.log(getDateElement(today));
     getDateElement(today)
         .addClass('today')
 }
 
 function fillEvents(events) {
     travels = events.travels;
-    icons = events.icons;
+    doodle = events.doodle;
     for (let index = 0; index < travels.length; index++) {
         countryObjArrival = countryObj(travels[index]);
         if (travels[index + 1] !== undefined) {
@@ -62,13 +44,13 @@ function fillEvents(events) {
     }
 
 
-    for (let index = 0; index < icons.length; index++) {
-        let start = dateObj(icons[index][1], icons[index][2]);
+    for (let index = 0; index < doodle.length; index++) {
+        let start = dateObj(doodle[index][1], doodle[index][2]);
         let end = start;
-        if (icons[index].length > 3) {
-            end = dateObj(icons[index][3], icons[index][4]);
+        if (doodle[index].length > 3) {
+            end = dateObj(doodle[index][3], doodle[index][4]);
         }
-        addDoodle(icons[index][0], start, end);
+        addDoodle(doodle[index][0], start, end);
 
     }
 }
