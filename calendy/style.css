@@ -143,3 +143,11 @@
 .doodle-table-games {
     background-image: url('img/table-games.png');
 }
+
+.doodle-easter {
+    background-image: url('img/rabbit.png');
+}
+
+.doodle-holiday {
+    background-image: url('img/holiday.png');
+}

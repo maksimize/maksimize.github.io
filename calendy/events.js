@@ -14,6 +14,8 @@ const events = {
 
     ],
     doodle: [
+        ['ski', 23, 1],
+        ['ski', 26, 2],
         ['pager', 28, 2, 6, 3],
         ['dancing', 11, 3, 13, 3],
         ['pager', 14, 3, 20, 3],
@@ -21,6 +23,12 @@ const events = {
         ['ski', 19, 3],
         ['dancing', 25, 3, 27, 3],
         ['pager', 28, 3, 3, 4],
+        ['easter', 15, 4, 18, 4],
+        ['holiday', 15, 4, 18, 4],
+        ['holiday', 26, 5],
+        ['dancing', 26, 5, 29, 5],
+        ['holiday', 25, 6],
+        ['dancing', 6, 6, 11, 6],
     ]
 };
 
