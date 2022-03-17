@@ -105,8 +105,11 @@
 
 .doodles {
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 0.2em;
+    right: 0;
+    letter-spacing: 0.2em;
+    font-size: 3em;
+    font-family: emoji;
 }
 
 .doodle {
@@ -150,4 +153,8 @@
 
 .doodle-holiday {
     background-image: url('img/holiday.png');
+}
+
+.doodle-kubernetes {
+    background-image: url('img/kubernetes.png');
 }
