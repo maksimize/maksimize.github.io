@@ -15,39 +15,40 @@ const events = {
     ],
     doodle: [
         ['ski', 23, 1],
-        // ['ski', 26, 2],
-        // ['pager', 28, 2, 6, 3],
-        // ['dancing', 11, 3, 13, 3],
-        // ['pager', 14, 3, 20, 3],
-        // ['table-games', 18, 3],
-        // ['ski', 19, 3],
-        // ['dancing', 25, 3, 27, 3],
-        // ['pager', 28, 3, 3, 4],
-        // ['easter', 15, 4, 18, 4],
-        // ['holiday', 15, 4, 18, 4],
-        // ['holiday', 26, 5],
-        // ['kubernetes', 16, 5, 20, 5],
-        // ['dancing', 26, 5, 29, 5],
-        // ['holiday', 25, 6],
-        // ['dancing', 6, 6, 11, 6],
+        ['ski', 26, 2],
+        ['pager', 28, 2, 6, 3],
+        ['dancing', 11, 3, 13, 3],
+        ['pager', 14, 3, 20, 3],
+        ['table-games', 18, 3],
+        ['ski', 19, 3],
+        ['dancing', 25, 3, 27, 3],
+        ['pager', 28, 3, 3, 4],
+        ['ramadan', 2, 4],
+        ['easter', 15, 4, 18, 4],
+        ['holiday', 15, 4, 18, 4],
+        ['holiday', 26, 5],
+        ['kubernetes', 16, 5, 20, 5],
+        ['dancing', 26, 5, 29, 5],
+        ['holiday', 25, 6],
+        ['dancing', 6, 6, 11, 6],
     ],
     emojs: [
-        ['⛷️', 23, 1],
-        ['⛷️', 26, 2],
-        ['📟', 28, 2, 6, 3],
-        ['🕺', 11, 3, 13, 3],
-        ['📟', 14, 3, 20, 3],
-        ['🎲', 18, 3],
-        ['⛷️', 19, 3],
-        ['🕺', 25, 3, 27, 3],
-        ['📟', 28, 3, 3, 4],
-        ['🐇', 15, 4, 18, 4],
-        ['🛋️', 15, 4, 18, 4],
-        ['🛋️', 26, 5],
-        ['☸️', 16, 5, 20, 5],
-        ['🕺', 26, 5, 29, 5],
-        ['🛋️', 25, 6],
-        ['🕺', 6, 6, 11, 6],
+        // ['⛷️', 23, 1],
+        // ['⛷️', 26, 2],
+        // ['📟', 28, 2, 6, 3],
+        // ['🕺', 11, 3, 13, 3],
+        // ['📟', 14, 3, 20, 3],
+        // ['🎲', 18, 3],
+        // ['⛷️', 19, 3],
+        // ['🕺', 25, 3, 27, 3],
+        // ['📟', 28, 3, 3, 4],
+        // ['🐇', 15, 4, 18, 4],
+        // ['🛋️', 15, 4, 18, 4],
+        // ['🛋️', 26, 5],
+        // ['☸️', 16, 5, 20, 5],
+        // ['🕺', 26, 5, 29, 5],
+        // ['🛋️', 25, 6],
+        // ['🕺', 6, 6, 11, 6],
     ]
 };
 
@@ -94,8 +95,8 @@ function fillEvents(events) {
 }
 
 function fillCountry(countryObjArrival, countryObjDeparture) {
-    // addDoodle('airplane', countryObjArrival.date);
-    addEmojs('✈️', countryObjArrival.date);
+    addDoodle('airplane', countryObjArrival.date);
+    // addEmojs('✈️', countryObjArrival.date);
     // console.log(countryObjArrival.date);
     loopThroughDates(countryObjArrival.date, countryObjDeparture.date, function(loopDate) {
         if (loopDate.getTime() != countryObjDeparture.date.getTime()) {

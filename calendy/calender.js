@@ -16,12 +16,16 @@ for (let index = lastYearDaysToFill; index > 0; index--) {
 }
 
 loopThroughDates(targetYear1stDay, targetYearAfter1stDay, function(loopDate) {
+    let dateString = loopDate.getDate();
+    if (dateString == 1) {
+        dateString = loopDate.toLocaleString('default', { day: 'numeric', month: 'long' });
+    }
     el = $('<div>')
         .addClass('col-md-1 cell')
         .attr('data-date', loopDate.toISOString().split('T')[0])
     dayElement = $('<div>')
         .addClass('row day-number')
-        .text(loopDate.getDate());
+        .text(dateString);
     doodlesElement = $('<div>')
         .addClass('row doodles');
     el.append(dayElement).append(doodlesElement);

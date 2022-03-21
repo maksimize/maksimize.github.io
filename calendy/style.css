@@ -84,23 +84,23 @@
 }
 
 .flag-sweden {
-    background-image: url('img/Flag_of_Sweden.svg');
+    background-image: url('img/flags/sweden.png');
 }
 
 .flag-austria {
-    background-image: url('img/Flag_of_Austria.svg');
+    background-image: url('img/flags/austria.png');
 }
 
 .flag-poland {
-    background-image: url('img/Flag_of_Poland.svg');
+    background-image: url('img/flags/poland.png');
 }
 
 .flag-egypt {
-    background-image: url('img/Flag_of_Egypt.svg');
+    background-image: url('img/flags/egypt.png');
 }
 
 .flag-croatia {
-    background-image: url('img/Flag_of_Croatia.svg');
+    background-image: url('img/flags/croatia.png');
 }
 
 .doodles {
@@ -121,40 +121,40 @@
     margin: 10px;
 }
 
-.doodle-sweden {
-    background-image: url('img/Flag_of_Sweden.svg');
-}
-
 .doodle-airplane {
     width: 50px;
     height: 50px;
-    background-image: url('img/airplane.png');
+    background-image: url('img/doodles/plane.png');
 }
 
 .doodle-dancing {
-    background-image: url('img/dancing.png');
+    background-image: url('img/doodles/dancing.png');
 }
 
 .doodle-pager {
-    background-image: url('img/pager.png');
+    background-image: url('img/doodles/pager.png');
 }
 
 .doodle-ski {
-    background-image: url('img/ski.png');
+    background-image: url('img/doodles/ski.png');
 }
 
 .doodle-table-games {
-    background-image: url('img/table-games.png');
+    background-image: url('img/doodles/table-games.png');
 }
 
 .doodle-easter {
-    background-image: url('img/rabbit.png');
+    background-image: url('img/doodles/rabbit.png');
 }
 
 .doodle-holiday {
-    background-image: url('img/holiday.png');
+    background-image: url('img/doodles/holiday.png');
 }
 
 .doodle-kubernetes {
-    background-image: url('img/kubernetes.png');
+    background-image: url('img/doodles/kubernetes.png');
+}
+
+.doodle-ramadan {
+    background-image: url('img/doodles/half-moon.png');
 }
