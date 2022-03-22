@@ -47,7 +47,12 @@
     margin: auto;
 }
 
-.cell {
+.past-date {
+    border: 1px solid rgb(0, 0, 0);
+    opacity: 0.5;
+}
+
+.future-date {
     border: 1px solid black;
 }
 
