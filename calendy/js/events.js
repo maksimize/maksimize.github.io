@@ -1,39 +1,3 @@
-const events = {
-    travels: [
-        ['egypt', 1, 1],
-        ['austria', 10, 1],
-        ['sweden', 26, 1],
-        ['austria', 15, 2],
-        ['sweden', 27, 2],
-        ['poland', 11, 3],
-        ['sweden', 14, 3],
-        ['austria', 20, 3],
-        ['sweden', 28, 3],
-        ['croatia', 6, 6],
-        ['undecided', 12, 6],
-
-    ],
-    doodle: [
-        ['ski', 23, 1],
-        ['ski', 26, 2],
-        ['pager', 28, 2, 6, 3],
-        ['dancing', 11, 3, 13, 3],
-        ['pager', 14, 3, 20, 3],
-        ['table-games', 18, 3],
-        ['ski', 19, 3],
-        ['dancing', 25, 3, 27, 3],
-        ['pager', 28, 3, 3, 4],
-        ['ramadan', 2, 4],
-        ['easter', 15, 4, 18, 4],
-        ['holiday', 15, 4, 18, 4],
-        ['holiday', 26, 5],
-        ['kubernetes', 16, 5, 20, 5],
-        ['dancing', 26, 5, 29, 5],
-        ['holiday', 25, 6],
-        ['dancing', 6, 6, 11, 6],
-    ]
-};
-
 function today() {
     const today = new Date();
     getDateElement(today)
@@ -61,18 +25,19 @@ function fillEvents(events) {
             end = dateObj(doodle[index][3], doodle[index][4]);
         }
         addDoodle(doodle[index][0], start, end);
-
     }
 }
 
 function fillCountry(countryObjArrival, countryObjDeparture) {
     addDoodle('airplane', countryObjArrival.date);
     loopThroughDates(countryObjArrival.date, countryObjDeparture.date, function(loopDate) {
-        if (loopDate.getTime() != countryObjDeparture.date.getTime()) {
-            getDateElement(loopDate)
-                // .children('.doodles')
-                .addClass('flag')
-                .addClass('flag-' + countryObjArrival.country);
+        el = getDateElement(loopDate).addClass('flag');
+        if (loopDate.getTime() == countryObjArrival.date.getTime()) { // 1st day
+            // el.addClass('flag-' + countryObjDeparture.country + "-" + countryObjArrival.country);
+        } else if (loopDate.getTime() == countryObjDeparture.date.getTime()) { // last day
+            el.addClass('flag-' + countryObjArrival.country + "-" + countryObjDeparture.country);
+        } else {
+            el.addClass('flag-' + countryObjArrival.country);
         }
     })
 }
