@@ -33,9 +33,8 @@ function fillCountry(countryObjArrival, countryObjDeparture) {
     loopThroughDates(countryObjArrival.date, countryObjDeparture.date, function(loopDate) {
         el = getDateElement(loopDate).addClass('flag');
         if (loopDate.getTime() == countryObjArrival.date.getTime()) { // 1st day
-            // el.addClass('flag-' + countryObjDeparture.country + "-" + countryObjArrival.country);
         } else if (loopDate.getTime() == countryObjDeparture.date.getTime()) { // last day
-            el.addClass('flag-' + countryObjArrival.country + "-" + countryObjDeparture.country);
+            el.addClass('flag-merge').addClass('flag-' + countryObjArrival.country + "-" + countryObjDeparture.country);
         } else {
             el.addClass('flag-' + countryObjArrival.country);
         }

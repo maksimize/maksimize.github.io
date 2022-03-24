@@ -48,13 +48,10 @@
 }
 
 .past-date {
-    border: 1px solid rgb(0, 0, 0);
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
-.future-date {
-    border: 1px solid black;
-}
+.future-date {}
 
 .header {
     background: rgb(200, 200, 200);
@@ -64,11 +61,13 @@
 }
 
 .day-number {
-    padding-left: 10px;
+    /* padding-left: 10px; */
 }
 
 .days .cell {
     height: 12em;
+    border: 10px solid white;
+    outline: 3px solid rgb(95, 95, 95);
 }
 
 .today {
@@ -80,13 +79,13 @@
 }
 
 .flag {
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: repeat-x;
     background-position: center;
 }
 
-.flag:before,
-.flag:after {
+.flag-merge:before,
+.flag-merge:after {
     content: "";
     position: absolute;
     top: 0;
@@ -97,12 +96,13 @@
     z-index: -1;
 }
 
-.flag:before {
+.flag-merge:before {
     left: 0;
     right: 70%;
+    border-right: 3px dashed white;
 }
 
-.flag:after {
+.flag-merge:after {
     left: 30%;
     right: 0;
 }
