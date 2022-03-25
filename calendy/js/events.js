@@ -1,9 +1,3 @@
-function today() {
-    const today = new Date();
-    getDateElement(today)
-        .addClass('today')
-}
-
 function fillEvents(events) {
     travels = events.travels;
     doodle = events.doodle;
@@ -71,8 +65,5 @@ function countryObj(arr) {
 function dateObj(day, month) {
     return getTargetYearDate(day, month);
 }
-
-
-today()
 
 fillEvents(events);

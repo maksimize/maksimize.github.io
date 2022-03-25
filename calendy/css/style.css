@@ -48,10 +48,12 @@
 }
 
 .past-date {
-    opacity: 0.3;
+    outline: 3px solid rgb(199, 199, 199);
 }
 
-.future-date {}
+.future-date {
+    outline: 3px solid rgb(95, 95, 95);
+}
 
 .header {
     background: rgb(200, 200, 200);
@@ -67,11 +69,10 @@
 .days .cell {
     height: 12em;
     border: 10px solid white;
-    outline: 3px solid rgb(95, 95, 95);
 }
 
 .today {
-    border: 5px solid rgb(255, 0, 0);
+    border: 5px solid rgb(255, 0, 0) !important;
 }
 
 .hidden {
@@ -79,8 +80,8 @@
 }
 
 .flag {
-    background-size: contain;
-    background-repeat: repeat-x;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
 }
 

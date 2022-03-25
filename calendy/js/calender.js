@@ -40,16 +40,17 @@ function getCellTitle(loopDate) {
 function getCellClasses(loopDate) {
     let classes = 'col-md-1 cell';
     let today = new Date();
-    // today = getTargetYearDate(today.getDate())
-    // console.log(loopDate, today)
-
+    today = getTargetYearDate(today.getDate(), today.getMonth() + 1)
     if (loopDate < today) {
         classes = classes + ' past-date'
-    } else if (loopDate == today) {
-        console.log('z')
+    } else if (loopDate.getTime() == today.getTime()) {
+        classes = classes + ' today'
     } else {
         classes = classes + ' future-date'
     }
 
     return classes;
 }
+
+// Fri Mar 25 2022 13: 00: 00 GMT + 0100(Central European Standard Time)
+// Fri Mar 25 2022 13: 00: 00 GMT + 0100(Central European Standard Time)
