@@ -28,29 +28,11 @@
 .doodle-ski {
    background-image: url('../img/doodles/ski.png');
 }
+.doodle-summer {
+   background-image: url('../img/doodles/summer.png');
+}
 .doodle-table-games {
    background-image: url('../img/doodles/table-games.png');
-}
-.flag-austria {
-   background-image: url('../img/flags/austria.png');
-}
-.flag-croatia {
-   background-image: url('../img/flags/croatia.png');
-}
-.flag-egypt {
-   background-image: url('../img/flags/egypt.png');
-}
-.flag-poland {
-   background-image: url('../img/flags/poland.png');
-}
-.flag-spain {
-   background-image: url('../img/flags/spain.png');
-}
-.flag-sweden {
-   background-image: url('../img/flags/sweden.png');
-}
-.flag-turkey {
-   background-image: url('../img/flags/turkey.png');
 }
 .flag-austria-austria:before {
    background-image: url('../img/flags/austria.png');
@@ -344,5 +326,26 @@
    background-image: url('../img/flags/turkey.png');
 }
 .flag-turkey-turkey:after {
+   background-image: url('../img/flags/turkey.png');
+}
+.flag-austria {
+   background-image: url('../img/flags/austria.png');
+}
+.flag-croatia {
+   background-image: url('../img/flags/croatia.png');
+}
+.flag-egypt {
+   background-image: url('../img/flags/egypt.png');
+}
+.flag-poland {
+   background-image: url('../img/flags/poland.png');
+}
+.flag-spain {
+   background-image: url('../img/flags/spain.png');
+}
+.flag-sweden {
+   background-image: url('../img/flags/sweden.png');
+}
+.flag-turkey {
    background-image: url('../img/flags/turkey.png');
 }

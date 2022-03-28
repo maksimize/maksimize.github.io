@@ -42,6 +42,11 @@
     margin: 0;
 }
 
+.days .cell {
+    height: 12em;
+    border: 10px solid white;
+}
+
 #calendy {
     width: 98%;
     margin: auto;
@@ -55,6 +60,12 @@
     outline: 3px solid rgb(95, 95, 95);
 }
 
+.today {
+    /* border: 5px solid r gb(255, 0, 0) !important; */
+    border: 10px solid rgb(237, 255, 132) !important;
+    outline: 3px solid rgb(95, 95, 95);
+}
+
 .header {
     background: rgb(200, 200, 200);
     width: 98%;
@@ -64,15 +75,6 @@
 
 .day-number {
     /* padding-left: 10px; */
-}
-
-.days .cell {
-    height: 12em;
-    border: 10px solid white;
-}
-
-.today {
-    border: 5px solid rgb(255, 0, 0) !important;
 }
 
 .hidden {

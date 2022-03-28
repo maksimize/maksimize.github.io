@@ -16,7 +16,7 @@ const events = {
         ['spain', 16, 5],
         ['sweden', 20, 5],
         ['croatia', 6, 6],
-        ['undecided', 12, 6],
+        ['sweden', 12, 6],
 
     ],
     doodle: [
@@ -38,5 +38,6 @@ const events = {
         ['dancing', 26, 5, 29, 5],
         ['holiday', 25, 6],
         ['dancing', 6, 6, 11, 6],
+        ['summer', 25, 6],
     ]
 };
