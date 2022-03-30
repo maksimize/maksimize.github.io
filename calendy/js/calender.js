@@ -1,3 +1,4 @@
+console.log('ssss');
 const daysTag = $('#days');
 const targetYear1stDay = getTargetYearDate();
 const targetYearAfter1stDay = getTargetYearDate(false, false, 1);

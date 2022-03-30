@@ -30,6 +30,7 @@ const events = {
         ['dancing', 25, 3, 27, 3],
         ['pager', 28, 3, 3, 4],
         ['ramadan', 2, 4],
+        ['pager', 11, 4, 17, 4],
         ['rabbit', 15, 4, 18, 4],
         ['holiday', 13, 4, 20, 4],
         ['hamburger', 28, 4],
