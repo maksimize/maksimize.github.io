@@ -12,7 +12,7 @@ const events = {
         ['austria', 6, 4],
         ['turkey', 13, 4],
         ['austria', 20, 4],
-        ['sweden', 27, 4],
+        ['sweden', 22, 4],
         ['spain', 16, 5],
         ['sweden', 20, 5],
         ['croatia', 6, 6],
