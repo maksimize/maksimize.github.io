@@ -24,15 +24,15 @@ function fillEvents(events) {
 
 function fillCountry(countryObjArrival, countryObjDeparture) {
     addDoodle('airplane', countryObjArrival.date);
-    loopThroughDates(countryObjArrival.date, countryObjDeparture.date, function(loopDate) {
-        el = getDateElement(loopDate).addClass('flag');
-        if (loopDate.getTime() == countryObjArrival.date.getTime()) { // 1st day
-        } else if (loopDate.getTime() == countryObjDeparture.date.getTime()) { // last day
-            el.addClass('flag-merge').addClass('flag-' + countryObjArrival.country + "-" + countryObjDeparture.country);
-        } else {
-            el.addClass('flag-' + countryObjArrival.country);
-        }
-    })
+    // loopThroughDates(countryObjArrival.date, countryObjDeparture.date, function(loopDate) {
+    //     el = getDateElement(loopDate).addClass('flag');
+    //     if (loopDate.getTime() == countryObjArrival.date.getTime()) { // 1st day
+    //     } else if (loopDate.getTime() == countryObjDeparture.date.getTime()) { // last day
+    //         el.addClass('flag-merge').addClass('flag-' + countryObjArrival.country + "-" + countryObjDeparture.country);
+    //     } else {
+    //         el.addClass('flag-' + countryObjArrival.country);
+    //     }
+    // })
 }
 
 function addDoodle(doodle, start, end) {
