@@ -13,7 +13,6 @@ $.ajax({
                     date: moment(item.start.dateTime)
                 });
             } else {
-                // console.log(item);
                 events.items.push({
                     event: item.summary.match(/\p{Emoji}+/gu)[0],
                     startDate: moment(item.start.date),
@@ -48,7 +47,6 @@ function fillEvents(events) {
 
 function fillCountry(flyIn, flyOut) {
     addDoodle('✈️', flyIn.date);
-
     for (var m = moment(flyIn.date); m.diff(flyOut.date, 'days') <= 0; m.add(1, 'days')) {
         el = getDateElement(m.format('YYYY-MM-DD')).addClass('flag');
         if (m.isSame(flyOut.date)) {
@@ -63,10 +61,13 @@ function fillCountry(flyIn, flyOut) {
 }
 
 function addDoodle(doodle, startDate, endDate) {
+    // console.log(doodle, startDate, endDate);
+    var diffCondetion = -1;
     if (!endDate) {
         endDate = startDate;
+        diffCondetion = 0
     }
-    for (var m = moment(startDate); m.diff(endDate, 'days') <= -1; m.add(1, 'days')) {
+    for (var m = moment(startDate); m.diff(endDate, 'days') <= diffCondetion; m.add(1, 'days')) {
         el = $('<div>')
             .addClass('doodle')
             .addClass('doodle-' + doodle)

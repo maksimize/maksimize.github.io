@@ -53,7 +53,8 @@
 }
 
 .past-date {
-    outline: 3px solid rgb(199, 199, 199);
+    outline: 3px solid rgb(95, 95, 95);
+    border: 10px solid rgb(240, 240, 240) !important;
 }
 
 .future-date {

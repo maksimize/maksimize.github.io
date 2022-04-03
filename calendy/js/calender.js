@@ -4,8 +4,6 @@ const urlParams = new URLSearchParams(queryString);
 const queryStringYear = urlParams.get('year');
 const calendarStartDay = moment(queryStringYear).startOf('year').startOf('isoWeek')
 const calendarEndDay = moment(queryStringYear).endOf('year').endOf('isoWeek')
-console.log(calendarStartDay.format('YYYY-MM-DD'));
-console.log(calendarEndDay.format('YYYY-MM-DD'));
 
 for (var m = moment(calendarStartDay); m.diff(calendarEndDay, 'days') <= -1; m.add(1, 'days')) {
     el = $('<div>')
@@ -23,7 +21,7 @@ for (var m = moment(calendarStartDay); m.diff(calendarEndDay, 'days') <= -1; m.a
 function getCellTitle(date) {
     let dateString = date.date();
     if (dateString == 1) {
-        dateString = date.format('DD MMMM')
+        dateString = date.format('D MMMM')
     }
     return dateString;
 }
