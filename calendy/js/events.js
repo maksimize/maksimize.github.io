@@ -1,17 +1,5 @@
 function fillEvents(events) {
-    travels = events.travels;
     doodle = events.doodle;
-    for (let index = 0; index < travels.length; index++) {
-        countryObjArrival = countryObj(travels[index]);
-        if (travels[index + 1] !== undefined) {
-            countryObjDeparture = countryObj(travels[index + 1]);
-        } else {
-            countryObjDeparture = countryObj(['blank', 31, 12]);
-        }
-        fillCountry(countryObjArrival, countryObjDeparture);
-    }
-
-
     for (let index = 0; index < doodle.length; index++) {
         let start = dateObj(doodle[index][1], doodle[index][2]);
         let end = start;
@@ -20,19 +8,6 @@ function fillEvents(events) {
         }
         addDoodle(doodle[index][0], start, end);
     }
-}
-
-function fillCountry(countryObjArrival, countryObjDeparture) {
-    addDoodle('airplane', countryObjArrival.date);
-    // loopThroughDates(countryObjArrival.date, countryObjDeparture.date, function(loopDate) {
-    //     el = getDateElement(loopDate).addClass('flag');
-    //     if (loopDate.getTime() == countryObjArrival.date.getTime()) { // 1st day
-    //     } else if (loopDate.getTime() == countryObjDeparture.date.getTime()) { // last day
-    //         el.addClass('flag-merge').addClass('flag-' + countryObjArrival.country + "-" + countryObjDeparture.country);
-    //     } else {
-    //         el.addClass('flag-' + countryObjArrival.country);
-    //     }
-    // })
 }
 
 function addDoodle(doodle, start, end) {
