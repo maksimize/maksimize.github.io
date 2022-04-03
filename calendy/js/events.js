@@ -1,69 +1,82 @@
+const cal_id = "t49343ina8nt67f0kpls2jt6gk@group.calendar.google.com"
+const api_key = "AIzaSyAwzQeP3wRq5v3VV7kfv6tWBUjyHTggTIw"
+
+$.ajax({
+    url: "https://www.googleapis.com/calendar/v3/calendars/" + cal_id + "/events?singleEvents=true&orderBy=startTime&key=" + api_key,
+    success: function(data) {
+        const events = { travels: [], items: [] };
+        for (let i = 0; i < data.items.length; i++) {
+            const item = data.items[i];
+            if (item.summary.startsWith('Fly: ')) {
+                events.travels.push({
+                    country: item.summary.match(/\p{Emoji}+/gu)[0],
+                    date: moment(item.start.dateTime)
+                });
+            } else {
+                events.items.push({
+                    event: item.summary.match(/\p{Emoji}+/gu)[0],
+                    startDate: moment(item.start.date),
+                    endDate: moment(item.end.date)
+                });
+            }
+        }
+        // console.log(events.events)
+        fillEvents(events);
+    }
+});
+
 function fillEvents(events) {
-    travels = events.travels;
-    doodle = events.doodle;
+    const travels = events.travels;
     for (let index = 0; index < travels.length; index++) {
-        countryObjArrival = countryObj(travels[index]);
+        flyIn = travels[index];
         if (travels[index + 1] !== undefined) {
-            countryObjDeparture = countryObj(travels[index + 1]);
+            flyOut = travels[index + 1];
         } else {
-            countryObjDeparture = countryObj(['blank', 31, 12]);
+            flyOut = { country: flyIn.country, date: moment(flyIn.date).endOf("year") };
         }
-        fillCountry(countryObjArrival, countryObjDeparture);
+        fillCountry(flyIn, flyOut);
     }
 
+    const items = events.items;
 
-    for (let index = 0; index < doodle.length; index++) {
-        let start = dateObj(doodle[index][1], doodle[index][2]);
-        let end = start;
-        if (doodle[index].length > 3) {
-            end = dateObj(doodle[index][3], doodle[index][4]);
-        }
-        addDoodle(doodle[index][0], start, end);
+    for (let index = 0; index < items.length; index++) {
+        item = items[index];
+        addDoodle(item.event, item.startDate, item.endDate)
     }
 }
 
-function fillCountry(countryObjArrival, countryObjDeparture) {
-    addDoodle('airplane', countryObjArrival.date);
-    loopThroughDates(countryObjArrival.date, countryObjDeparture.date, function(loopDate) {
-        el = getDateElement(loopDate).addClass('flag');
-        if (loopDate.getTime() == countryObjArrival.date.getTime()) { // 1st day
-        } else if (loopDate.getTime() == countryObjDeparture.date.getTime()) { // last day
-            el.addClass('flag-merge').addClass('flag-' + countryObjArrival.country + "-" + countryObjDeparture.country);
+function fillCountry(flyIn, flyOut) {
+    addDoodle('✈️', flyIn.date);
+    for (var m = moment(flyIn.date); m.diff(flyOut.date, 'days') <= 0; m.add(1, 'days')) {
+        el = getDateElement(m.format('YYYY-MM-DD')).addClass('flag');
+        if (m.isSame(flyOut.date)) {
+            // last day
+            el.addClass('flag-merge').addClass('flag-' + flyIn.country + "-" + flyOut.country);
+        } else if (m.isSame(flyIn.date)) {
+            // 1st day
         } else {
-            el.addClass('flag-' + countryObjArrival.country);
+            el.addClass('flag-' + flyIn.country);
         }
-    })
+    }
 }
 
-function addDoodle(doodle, start, end) {
-    if (!end) {
-        end = start;
+function addDoodle(doodle, startDate, endDate) {
+    // console.log(doodle, startDate, endDate);
+    var diffCondetion = -1;
+    if (!endDate) {
+        endDate = startDate;
+        diffCondetion = 0
     }
-    loopThroughDates(start, end, function(loopDate) {
+    for (var m = moment(startDate); m.diff(endDate, 'days') <= diffCondetion; m.add(1, 'days')) {
         el = $('<div>')
             .addClass('doodle')
-            .addClass('doodle-' + doodle);
-        getDateElement(loopDate).children('.doodles').append(el);
-    });
+            .addClass('doodle-' + doodle)
+            .text(doodle);
+        getDateElement(m.format('YYYY-MM-DD')).children('.doodles').append(el);
+    }
 }
 
 function getDateElement(date) {
-    day = date.getDate();
-    month = date.getMonth() + 1;
-    date = getTargetYearDate().getFullYear() + '-' + month.toString().padStart(2, "0") + '-' + day.toString().padStart(2, "0");
     tag = '[data-date="' + date + '"]';
     return $(tag);
 }
-
-function countryObj(arr) {
-    return {
-        country: arr[0],
-        date: dateObj(arr[1], arr[2])
-    }
-}
-
-function dateObj(day, month) {
-    return getTargetYearDate(day, month);
-}
-
-fillEvents(events);

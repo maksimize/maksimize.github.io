@@ -33,13 +33,13 @@ fs.readdir(flagsFolder, (err, files) => {
 });
 
 
-fs.readdir(doodlesFolder, (err, files) => {
-    files.forEach(file => {
-        if (file != '.DS_Store') {
-            let country = file.substring(0, file.length - 4);
-            console.log(".doodle-" + country + " {");
-            console.log("   background-image: url('../img/doodles/" + file + "');");
-            console.log("}");
-        }
-    });
-});
+// fs.readdir(doodlesFolder, (err, files) => {
+//     files.forEach(file => {
+//         if (file != '.DS_Store') {
+//             let country = file.substring(0, file.length - 4);
+//             console.log(".doodle-" + country + " {");
+//             console.log("   background-image: url('../img/doodles/" + file + "');");
+//             console.log("}");
+//         }
+//     });
+// });
