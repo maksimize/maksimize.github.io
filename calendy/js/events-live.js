@@ -47,7 +47,7 @@ function fillEventsLive(events_live) {
 }
 
 function fillCountryLive(flyIn, flyOut) {
-    addDoodleLive('airplane', flyIn.date);
+    addDoodleLive('✈️', flyIn.date);
 
     for (var m = moment(flyIn.date); m.diff(flyOut.date, 'days') <= 0; m.add(1, 'days')) {
         el = getDateElementMoment(m.format('YYYY-MM-DD')).addClass('flag');
@@ -66,10 +66,11 @@ function addDoodleLive(doodle, startDate, endDate) {
     if (!endDate) {
         endDate = startDate;
     }
-    for (var m = moment(startDate); m.diff(endDate, 'days') <= 0; m.add(1, 'days')) {
+    for (var m = moment(startDate); m.diff(endDate, 'days') <= -1; m.add(1, 'days')) {
         el = $('<div>')
             .addClass('doodle')
-            .addClass('doodle-' + doodle);
+            .addClass('doodle-' + doodle)
+            .text(doodle);
         getDateElementMoment(m.format('YYYY-MM-DD')).children('.doodles').append(el);
     }
 }
