@@ -1,351 +1,315 @@
-.doodle-airplane {
-   background-image: url('../img/doodles/airplane.png');
+.flag-🇦🇹 {
+   background-image: url('../img/flags/🇦🇹.png');
 }
-.doodle-dancing {
-   background-image: url('../img/doodles/dancing.png');
+.flag-🇪🇬 {
+   background-image: url('../img/flags/🇪🇬.png');
 }
-.doodle-hamburger {
-   background-image: url('../img/doodles/hamburger.png');
+.flag-🇪🇸 {
+   background-image: url('../img/flags/🇪🇸.png');
 }
-.doodle-holiday {
-   background-image: url('../img/doodles/holiday.png');
+.flag-🇭🇷 {
+   background-image: url('../img/flags/🇭🇷.png');
 }
-.doodle-kubernetes {
-   background-image: url('../img/doodles/kubernetes.png');
+.flag-🇵🇱 {
+   background-image: url('../img/flags/🇵🇱.png');
 }
-.doodle-pager {
-   background-image: url('../img/doodles/pager.png');
+.flag-🇸🇪 {
+   background-image: url('../img/flags/🇸🇪.png');
 }
-.doodle-plane {
-   background-image: url('../img/doodles/plane.png');
+.flag-🇹🇷 {
+   background-image: url('../img/flags/🇹🇷.png');
 }
-.doodle-rabbit {
-   background-image: url('../img/doodles/rabbit.png');
+.flag-🇦🇹-🇦🇹:before {
+   background-image: url('../img/flags/🇦🇹.png');
 }
-.doodle-ramadan {
-   background-image: url('../img/doodles/ramadan.png');
+.flag-🇦🇹-🇦🇹:after {
+   background-image: url('../img/flags/🇦🇹.png');
 }
-.doodle-ski {
-   background-image: url('../img/doodles/ski.png');
+.flag-🇦🇹-🇪🇬:before {
+   background-image: url('../img/flags/🇦🇹.png');
 }
-.doodle-summer {
-   background-image: url('../img/doodles/summer.png');
+.flag-🇦🇹-🇪🇬:after {
+   background-image: url('../img/flags/🇪🇬.png');
 }
-.doodle-table-games {
-   background-image: url('../img/doodles/table-games.png');
+.flag-🇦🇹-🇪🇸:before {
+   background-image: url('../img/flags/🇦🇹.png');
 }
-.flag-austria-austria:before {
-   background-image: url('../img/flags/austria.png');
+.flag-🇦🇹-🇪🇸:after {
+   background-image: url('../img/flags/🇪🇸.png');
 }
-.flag-austria-austria:after {
-   background-image: url('../img/flags/austria.png');
+.flag-🇦🇹-🇭🇷:before {
+   background-image: url('../img/flags/🇦🇹.png');
 }
-.flag-austria-croatia:before {
-   background-image: url('../img/flags/austria.png');
+.flag-🇦🇹-🇭🇷:after {
+   background-image: url('../img/flags/🇭🇷.png');
 }
-.flag-austria-croatia:after {
-   background-image: url('../img/flags/croatia.png');
+.flag-🇦🇹-🇵🇱:before {
+   background-image: url('../img/flags/🇦🇹.png');
 }
-.flag-austria-egypt:before {
-   background-image: url('../img/flags/austria.png');
+.flag-🇦🇹-🇵🇱:after {
+   background-image: url('../img/flags/🇵🇱.png');
 }
-.flag-austria-egypt:after {
-   background-image: url('../img/flags/egypt.png');
+.flag-🇦🇹-🇸🇪:before {
+   background-image: url('../img/flags/🇦🇹.png');
 }
-.flag-austria-poland:before {
-   background-image: url('../img/flags/austria.png');
+.flag-🇦🇹-🇸🇪:after {
+   background-image: url('../img/flags/🇸🇪.png');
 }
-.flag-austria-poland:after {
-   background-image: url('../img/flags/poland.png');
+.flag-🇦🇹-🇹🇷:before {
+   background-image: url('../img/flags/🇦🇹.png');
 }
-.flag-austria-spain:before {
-   background-image: url('../img/flags/austria.png');
+.flag-🇦🇹-🇹🇷:after {
+   background-image: url('../img/flags/🇹🇷.png');
 }
-.flag-austria-spain:after {
-   background-image: url('../img/flags/spain.png');
+.flag-🇪🇬-🇦🇹:before {
+   background-image: url('../img/flags/🇪🇬.png');
 }
-.flag-austria-sweden:before {
-   background-image: url('../img/flags/austria.png');
+.flag-🇪🇬-🇦🇹:after {
+   background-image: url('../img/flags/🇦🇹.png');
 }
-.flag-austria-sweden:after {
-   background-image: url('../img/flags/sweden.png');
+.flag-🇪🇬-🇪🇬:before {
+   background-image: url('../img/flags/🇪🇬.png');
 }
-.flag-austria-turkey:before {
-   background-image: url('../img/flags/austria.png');
+.flag-🇪🇬-🇪🇬:after {
+   background-image: url('../img/flags/🇪🇬.png');
 }
-.flag-austria-turkey:after {
-   background-image: url('../img/flags/turkey.png');
+.flag-🇪🇬-🇪🇸:before {
+   background-image: url('../img/flags/🇪🇬.png');
 }
-.flag-croatia-austria:before {
-   background-image: url('../img/flags/croatia.png');
+.flag-🇪🇬-🇪🇸:after {
+   background-image: url('../img/flags/🇪🇸.png');
 }
-.flag-croatia-austria:after {
-   background-image: url('../img/flags/austria.png');
+.flag-🇪🇬-🇭🇷:before {
+   background-image: url('../img/flags/🇪🇬.png');
 }
-.flag-croatia-croatia:before {
-   background-image: url('../img/flags/croatia.png');
+.flag-🇪🇬-🇭🇷:after {
+   background-image: url('../img/flags/🇭🇷.png');
 }
-.flag-croatia-croatia:after {
-   background-image: url('../img/flags/croatia.png');
+.flag-🇪🇬-🇵🇱:before {
+   background-image: url('../img/flags/🇪🇬.png');
 }
-.flag-croatia-egypt:before {
-   background-image: url('../img/flags/croatia.png');
+.flag-🇪🇬-🇵🇱:after {
+   background-image: url('../img/flags/🇵🇱.png');
 }
-.flag-croatia-egypt:after {
-   background-image: url('../img/flags/egypt.png');
+.flag-🇪🇬-🇸🇪:before {
+   background-image: url('../img/flags/🇪🇬.png');
 }
-.flag-croatia-poland:before {
-   background-image: url('../img/flags/croatia.png');
+.flag-🇪🇬-🇸🇪:after {
+   background-image: url('../img/flags/🇸🇪.png');
 }
-.flag-croatia-poland:after {
-   background-image: url('../img/flags/poland.png');
+.flag-🇪🇬-🇹🇷:before {
+   background-image: url('../img/flags/🇪🇬.png');
 }
-.flag-croatia-spain:before {
-   background-image: url('../img/flags/croatia.png');
+.flag-🇪🇬-🇹🇷:after {
+   background-image: url('../img/flags/🇹🇷.png');
 }
-.flag-croatia-spain:after {
-   background-image: url('../img/flags/spain.png');
+.flag-🇪🇸-🇦🇹:before {
+   background-image: url('../img/flags/🇪🇸.png');
 }
-.flag-croatia-sweden:before {
-   background-image: url('../img/flags/croatia.png');
+.flag-🇪🇸-🇦🇹:after {
+   background-image: url('../img/flags/🇦🇹.png');
 }
-.flag-croatia-sweden:after {
-   background-image: url('../img/flags/sweden.png');
+.flag-🇪🇸-🇪🇬:before {
+   background-image: url('../img/flags/🇪🇸.png');
 }
-.flag-croatia-turkey:before {
-   background-image: url('../img/flags/croatia.png');
+.flag-🇪🇸-🇪🇬:after {
+   background-image: url('../img/flags/🇪🇬.png');
 }
-.flag-croatia-turkey:after {
-   background-image: url('../img/flags/turkey.png');
+.flag-🇪🇸-🇪🇸:before {
+   background-image: url('../img/flags/🇪🇸.png');
 }
-.flag-egypt-austria:before {
-   background-image: url('../img/flags/egypt.png');
+.flag-🇪🇸-🇪🇸:after {
+   background-image: url('../img/flags/🇪🇸.png');
 }
-.flag-egypt-austria:after {
-   background-image: url('../img/flags/austria.png');
+.flag-🇪🇸-🇭🇷:before {
+   background-image: url('../img/flags/🇪🇸.png');
 }
-.flag-egypt-croatia:before {
-   background-image: url('../img/flags/egypt.png');
+.flag-🇪🇸-🇭🇷:after {
+   background-image: url('../img/flags/🇭🇷.png');
 }
-.flag-egypt-croatia:after {
-   background-image: url('../img/flags/croatia.png');
+.flag-🇪🇸-🇵🇱:before {
+   background-image: url('../img/flags/🇪🇸.png');
 }
-.flag-egypt-egypt:before {
-   background-image: url('../img/flags/egypt.png');
+.flag-🇪🇸-🇵🇱:after {
+   background-image: url('../img/flags/🇵🇱.png');
 }
-.flag-egypt-egypt:after {
-   background-image: url('../img/flags/egypt.png');
+.flag-🇪🇸-🇸🇪:before {
+   background-image: url('../img/flags/🇪🇸.png');
 }
-.flag-egypt-poland:before {
-   background-image: url('../img/flags/egypt.png');
+.flag-🇪🇸-🇸🇪:after {
+   background-image: url('../img/flags/🇸🇪.png');
 }
-.flag-egypt-poland:after {
-   background-image: url('../img/flags/poland.png');
+.flag-🇪🇸-🇹🇷:before {
+   background-image: url('../img/flags/🇪🇸.png');
 }
-.flag-egypt-spain:before {
-   background-image: url('../img/flags/egypt.png');
+.flag-🇪🇸-🇹🇷:after {
+   background-image: url('../img/flags/🇹🇷.png');
 }
-.flag-egypt-spain:after {
-   background-image: url('../img/flags/spain.png');
+.flag-🇭🇷-🇦🇹:before {
+   background-image: url('../img/flags/🇭🇷.png');
 }
-.flag-egypt-sweden:before {
-   background-image: url('../img/flags/egypt.png');
+.flag-🇭🇷-🇦🇹:after {
+   background-image: url('../img/flags/🇦🇹.png');
 }
-.flag-egypt-sweden:after {
-   background-image: url('../img/flags/sweden.png');
+.flag-🇭🇷-🇪🇬:before {
+   background-image: url('../img/flags/🇭🇷.png');
 }
-.flag-egypt-turkey:before {
-   background-image: url('../img/flags/egypt.png');
+.flag-🇭🇷-🇪🇬:after {
+   background-image: url('../img/flags/🇪🇬.png');
 }
-.flag-egypt-turkey:after {
-   background-image: url('../img/flags/turkey.png');
+.flag-🇭🇷-🇪🇸:before {
+   background-image: url('../img/flags/🇭🇷.png');
 }
-.flag-poland-austria:before {
-   background-image: url('../img/flags/poland.png');
+.flag-🇭🇷-🇪🇸:after {
+   background-image: url('../img/flags/🇪🇸.png');
 }
-.flag-poland-austria:after {
-   background-image: url('../img/flags/austria.png');
+.flag-🇭🇷-🇭🇷:before {
+   background-image: url('../img/flags/🇭🇷.png');
 }
-.flag-poland-croatia:before {
-   background-image: url('../img/flags/poland.png');
+.flag-🇭🇷-🇭🇷:after {
+   background-image: url('../img/flags/🇭🇷.png');
 }
-.flag-poland-croatia:after {
-   background-image: url('../img/flags/croatia.png');
+.flag-🇭🇷-🇵🇱:before {
+   background-image: url('../img/flags/🇭🇷.png');
 }
-.flag-poland-egypt:before {
-   background-image: url('../img/flags/poland.png');
+.flag-🇭🇷-🇵🇱:after {
+   background-image: url('../img/flags/🇵🇱.png');
 }
-.flag-poland-egypt:after {
-   background-image: url('../img/flags/egypt.png');
+.flag-🇭🇷-🇸🇪:before {
+   background-image: url('../img/flags/🇭🇷.png');
 }
-.flag-poland-poland:before {
-   background-image: url('../img/flags/poland.png');
+.flag-🇭🇷-🇸🇪:after {
+   background-image: url('../img/flags/🇸🇪.png');
 }
-.flag-poland-poland:after {
-   background-image: url('../img/flags/poland.png');
+.flag-🇭🇷-🇹🇷:before {
+   background-image: url('../img/flags/🇭🇷.png');
 }
-.flag-poland-spain:before {
-   background-image: url('../img/flags/poland.png');
+.flag-🇭🇷-🇹🇷:after {
+   background-image: url('../img/flags/🇹🇷.png');
 }
-.flag-poland-spain:after {
-   background-image: url('../img/flags/spain.png');
+.flag-🇵🇱-🇦🇹:before {
+   background-image: url('../img/flags/🇵🇱.png');
 }
-.flag-poland-sweden:before {
-   background-image: url('../img/flags/poland.png');
+.flag-🇵🇱-🇦🇹:after {
+   background-image: url('../img/flags/🇦🇹.png');
 }
-.flag-poland-sweden:after {
-   background-image: url('../img/flags/sweden.png');
+.flag-🇵🇱-🇪🇬:before {
+   background-image: url('../img/flags/🇵🇱.png');
 }
-.flag-poland-turkey:before {
-   background-image: url('../img/flags/poland.png');
+.flag-🇵🇱-🇪🇬:after {
+   background-image: url('../img/flags/🇪🇬.png');
 }
-.flag-poland-turkey:after {
-   background-image: url('../img/flags/turkey.png');
+.flag-🇵🇱-🇪🇸:before {
+   background-image: url('../img/flags/🇵🇱.png');
 }
-.flag-spain-austria:before {
-   background-image: url('../img/flags/spain.png');
+.flag-🇵🇱-🇪🇸:after {
+   background-image: url('../img/flags/🇪🇸.png');
 }
-.flag-spain-austria:after {
-   background-image: url('../img/flags/austria.png');
+.flag-🇵🇱-🇭🇷:before {
+   background-image: url('../img/flags/🇵🇱.png');
 }
-.flag-spain-croatia:before {
-   background-image: url('../img/flags/spain.png');
+.flag-🇵🇱-🇭🇷:after {
+   background-image: url('../img/flags/🇭🇷.png');
 }
-.flag-spain-croatia:after {
-   background-image: url('../img/flags/croatia.png');
+.flag-🇵🇱-🇵🇱:before {
+   background-image: url('../img/flags/🇵🇱.png');
 }
-.flag-spain-egypt:before {
-   background-image: url('../img/flags/spain.png');
+.flag-🇵🇱-🇵🇱:after {
+   background-image: url('../img/flags/🇵🇱.png');
 }
-.flag-spain-egypt:after {
-   background-image: url('../img/flags/egypt.png');
+.flag-🇵🇱-🇸🇪:before {
+   background-image: url('../img/flags/🇵🇱.png');
 }
-.flag-spain-poland:before {
-   background-image: url('../img/flags/spain.png');
+.flag-🇵🇱-🇸🇪:after {
+   background-image: url('../img/flags/🇸🇪.png');
 }
-.flag-spain-poland:after {
-   background-image: url('../img/flags/poland.png');
+.flag-🇵🇱-🇹🇷:before {
+   background-image: url('../img/flags/🇵🇱.png');
 }
-.flag-spain-spain:before {
-   background-image: url('../img/flags/spain.png');
+.flag-🇵🇱-🇹🇷:after {
+   background-image: url('../img/flags/🇹🇷.png');
 }
-.flag-spain-spain:after {
-   background-image: url('../img/flags/spain.png');
+.flag-🇸🇪-🇦🇹:before {
+   background-image: url('../img/flags/🇸🇪.png');
 }
-.flag-spain-sweden:before {
-   background-image: url('../img/flags/spain.png');
+.flag-🇸🇪-🇦🇹:after {
+   background-image: url('../img/flags/🇦🇹.png');
 }
-.flag-spain-sweden:after {
-   background-image: url('../img/flags/sweden.png');
+.flag-🇸🇪-🇪🇬:before {
+   background-image: url('../img/flags/🇸🇪.png');
 }
-.flag-spain-turkey:before {
-   background-image: url('../img/flags/spain.png');
+.flag-🇸🇪-🇪🇬:after {
+   background-image: url('../img/flags/🇪🇬.png');
 }
-.flag-spain-turkey:after {
-   background-image: url('../img/flags/turkey.png');
+.flag-🇸🇪-🇪🇸:before {
+   background-image: url('../img/flags/🇸🇪.png');
 }
-.flag-sweden-austria:before {
-   background-image: url('../img/flags/sweden.png');
+.flag-🇸🇪-🇪🇸:after {
+   background-image: url('../img/flags/🇪🇸.png');
 }
-.flag-sweden-austria:after {
-   background-image: url('../img/flags/austria.png');
+.flag-🇸🇪-🇭🇷:before {
+   background-image: url('../img/flags/🇸🇪.png');
 }
-.flag-sweden-croatia:before {
-   background-image: url('../img/flags/sweden.png');
+.flag-🇸🇪-🇭🇷:after {
+   background-image: url('../img/flags/🇭🇷.png');
 }
-.flag-sweden-croatia:after {
-   background-image: url('../img/flags/croatia.png');
+.flag-🇸🇪-🇵🇱:before {
+   background-image: url('../img/flags/🇸🇪.png');
 }
-.flag-sweden-egypt:before {
-   background-image: url('../img/flags/sweden.png');
+.flag-🇸🇪-🇵🇱:after {
+   background-image: url('../img/flags/🇵🇱.png');
 }
-.flag-sweden-egypt:after {
-   background-image: url('../img/flags/egypt.png');
+.flag-🇸🇪-🇸🇪:before {
+   background-image: url('../img/flags/🇸🇪.png');
 }
-.flag-sweden-poland:before {
-   background-image: url('../img/flags/sweden.png');
+.flag-🇸🇪-🇸🇪:after {
+   background-image: url('../img/flags/🇸🇪.png');
 }
-.flag-sweden-poland:after {
-   background-image: url('../img/flags/poland.png');
+.flag-🇸🇪-🇹🇷:before {
+   background-image: url('../img/flags/🇸🇪.png');
 }
-.flag-sweden-spain:before {
-   background-image: url('../img/flags/sweden.png');
+.flag-🇸🇪-🇹🇷:after {
+   background-image: url('../img/flags/🇹🇷.png');
 }
-.flag-sweden-spain:after {
-   background-image: url('../img/flags/spain.png');
+.flag-🇹🇷-🇦🇹:before {
+   background-image: url('../img/flags/🇹🇷.png');
 }
-.flag-sweden-sweden:before {
-   background-image: url('../img/flags/sweden.png');
+.flag-🇹🇷-🇦🇹:after {
+   background-image: url('../img/flags/🇦🇹.png');
 }
-.flag-sweden-sweden:after {
-   background-image: url('../img/flags/sweden.png');
+.flag-🇹🇷-🇪🇬:before {
+   background-image: url('../img/flags/🇹🇷.png');
 }
-.flag-sweden-turkey:before {
-   background-image: url('../img/flags/sweden.png');
+.flag-🇹🇷-🇪🇬:after {
+   background-image: url('../img/flags/🇪🇬.png');
 }
-.flag-sweden-turkey:after {
-   background-image: url('../img/flags/turkey.png');
+.flag-🇹🇷-🇪🇸:before {
+   background-image: url('../img/flags/🇹🇷.png');
 }
-.flag-turkey-austria:before {
-   background-image: url('../img/flags/turkey.png');
+.flag-🇹🇷-🇪🇸:after {
+   background-image: url('../img/flags/🇪🇸.png');
 }
-.flag-turkey-austria:after {
-   background-image: url('../img/flags/austria.png');
+.flag-🇹🇷-🇭🇷:before {
+   background-image: url('../img/flags/🇹🇷.png');
 }
-.flag-turkey-croatia:before {
-   background-image: url('../img/flags/turkey.png');
+.flag-🇹🇷-🇭🇷:after {
+   background-image: url('../img/flags/🇭🇷.png');
 }
-.flag-turkey-croatia:after {
-   background-image: url('../img/flags/croatia.png');
+.flag-🇹🇷-🇵🇱:before {
+   background-image: url('../img/flags/🇹🇷.png');
 }
-.flag-turkey-egypt:before {
-   background-image: url('../img/flags/turkey.png');
+.flag-🇹🇷-🇵🇱:after {
+   background-image: url('../img/flags/🇵🇱.png');
 }
-.flag-turkey-egypt:after {
-   background-image: url('../img/flags/egypt.png');
+.flag-🇹🇷-🇸🇪:before {
+   background-image: url('../img/flags/🇹🇷.png');
 }
-.flag-turkey-poland:before {
-   background-image: url('../img/flags/turkey.png');
+.flag-🇹🇷-🇸🇪:after {
+   background-image: url('../img/flags/🇸🇪.png');
 }
-.flag-turkey-poland:after {
-   background-image: url('../img/flags/poland.png');
+.flag-🇹🇷-🇹🇷:before {
+   background-image: url('../img/flags/🇹🇷.png');
 }
-.flag-turkey-spain:before {
-   background-image: url('../img/flags/turkey.png');
-}
-.flag-turkey-spain:after {
-   background-image: url('../img/flags/spain.png');
-}
-.flag-turkey-sweden:before {
-   background-image: url('../img/flags/turkey.png');
-}
-.flag-turkey-sweden:after {
-   background-image: url('../img/flags/sweden.png');
-}
-.flag-turkey-turkey:before {
-   background-image: url('../img/flags/turkey.png');
-}
-.flag-turkey-turkey:after {
-   background-image: url('../img/flags/turkey.png');
-}
-.flag-austria {
-   background-image: url('../img/flags/austria.png');
-}
-.flag-croatia {
-   background-image: url('../img/flags/croatia.png');
-}
-.flag-egypt {
-   background-image: url('../img/flags/egypt.png');
-}
-.flag-poland {
-   background-image: url('../img/flags/poland.png');
-}
-.flag-spain {
-   background-image: url('../img/flags/spain.png');
-}
-.flag-sweden {
-   background-image: url('../img/flags/sweden.png');
-}
-.flag-turkey {
-   background-image: url('../img/flags/turkey.png');
+.flag-🇹🇷-🇹🇷:after {
+   background-image: url('../img/flags/🇹🇷.png');
 }

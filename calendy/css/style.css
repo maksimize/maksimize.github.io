@@ -53,7 +53,8 @@
 }
 
 .past-date {
-    outline: 3px solid rgb(199, 199, 199);
+    outline: 3px solid rgb(95, 95, 95);
+    border: 10px solid rgb(240, 240, 240) !important;
 }
 
 .future-date {
@@ -62,7 +63,7 @@
 
 .today {
     /* border: 5px solid r gb(255, 0, 0) !important; */
-    border: 10px solid rgb(237, 255, 132) !important;
+    border: 10px solid rgba(255, 0, 0, 0.6) !important;
     outline: 3px solid rgb(95, 95, 95);
 }
 
