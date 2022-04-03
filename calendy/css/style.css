@@ -115,16 +115,14 @@
     position: absolute;
     bottom: 0.2em;
     right: 0;
-    letter-spacing: 0.2em;
-    font-size: 3em;
-    font-family: emoji;
+    float: right;
 }
 
 .doodle {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 64px;
-    height: 64px;
+    width: 3vw;
+    height: 3vw;
     margin: 10px;
 }

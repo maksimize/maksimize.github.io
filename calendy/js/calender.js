@@ -1,3 +1,4 @@
+console.log('ssss');
 const daysTag = $('#days');
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
