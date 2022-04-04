@@ -1,4 +1,3 @@
-console.log('ssss');
 const daysTag = $('#days');
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
@@ -7,13 +6,13 @@ const calendarStartDay = moment(queryStringYear).startOf('year').startOf('isoWee
 const calendarEndDay = moment(queryStringYear).endOf('year').endOf('isoWeek')
 
 for (var m = moment(calendarStartDay); m.diff(calendarEndDay, 'days') <= -1; m.add(1, 'days')) {
-    el = $('<div>')
+    let el = $('<div>')
         .addClass(getCellClasses(m))
         .attr('data-date', m.format('YYYY-MM-DD'))
-    dayElement = $('<div>')
+    let dayElement = $('<div>')
         .addClass('row day-number')
         .text(getCellTitle(m));
-    doodlesElement = $('<div>')
+    let doodlesElement = $('<div>')
         .addClass('row doodles');
     el.append(dayElement).append(doodlesElement);
     daysTag.append(el);
@@ -36,6 +35,10 @@ function getCellClasses(date) {
         classes = classes + ' future-date'
     } else {
         classes = classes + ' today'
+    }
+    let dateString = date.date();
+    if (dateString == 1) {
+        classes = classes + ' frist-date'
     }
     return classes;
 }
