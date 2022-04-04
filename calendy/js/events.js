@@ -1,5 +1,7 @@
-const cal_id = "t49343ina8nt67f0kpls2jt6gk@group.calendar.google.com"
-const api_key = "AIzaSyAwzQeP3wRq5v3VV7kfv6tWBUjyHTggTIw"
+const cal_id = urlParams.get('cal_id');
+const api_key = urlParams.get('api_key');
+// const cal_id = "t49343ina8nt67f0kpls2jt6gk@group.calendar.google.com"
+// const api_key = "AIzaSyAwzQeP3wRq5v3VV7kfv6tWBUjyHTggTIw"
 
 $.ajax({
     url: "https://www.googleapis.com/calendar/v3/calendars/" + cal_id + "/events?singleEvents=true&orderBy=startTime&key=" + api_key,
