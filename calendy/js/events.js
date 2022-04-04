@@ -46,7 +46,7 @@ function fillEvents(events) {
 }
 
 function fillCountry(flyIn, flyOut) {
-    addDoodle('✈️', flyIn.date);
+    addDoodle('🛫', flyIn.date);
     for (var m = moment(flyIn.date); m.diff(flyOut.date, 'days') <= 0; m.add(1, 'days')) {
         el = getDateElement(m.format('YYYY-MM-DD')).addClass('flag');
         if (m.isSame(flyOut.date)) {

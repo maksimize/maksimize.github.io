@@ -116,13 +116,15 @@
     bottom: 0.2em;
     right: 0;
     float: right;
+    margin-right: 10px;
 }
 
 .doodle {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 3vw;
-    height: 3vw;
-    margin: 10px;
+    /* width: 3vw;
+    height: 3vw; */
+    /* margin: 10px; */
+    font-size: 3rem;
 }
