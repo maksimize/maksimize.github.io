@@ -29,16 +29,15 @@ function getCellTitle(date) {
 function getCellClasses(date) {
     let classes = 'col-md-1 cell';
     let today = moment();
-    if (date.isBefore(today, 'day')) {
-        classes = classes + ' past-date'
-    } else if (date.isAfter(today, 'day')) {
-        classes = classes + ' future-date'
+    if(date.format('M')%2){
+        classes = classes + ' even-month-date'
     } else {
+        classes = classes + ' odd-month-date'
+    }
+
+    if (!date.isBefore(today, 'day') && !date.isAfter(today, 'day')) {
         classes = classes + ' today'
     }
-    let dateString = date.date();
-    if (dateString == 1) {
-        classes = classes + ' frist-date'
-    }
+    
     return classes;
 }

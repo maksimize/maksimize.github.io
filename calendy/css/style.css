@@ -51,19 +51,31 @@
     height: 12em;
     border: 10px solid white;
 }
+.even-month-date {
+    /*border: 10px solid rgb(240, 240, 240) !important;*/
+    border: 10px solid rgb(127 127 127 / 58%) !important;
+    outline: 3px solid rgb(255, 255, 255);
 
-.past-date {
+}
+.odd-month-date {
+    border: 10px solid rgb(255 255 255 / 80%) !important;
     outline: 3px solid rgb(95, 95, 95);
-    border: 10px solid rgb(240, 240, 240) !important;
 }
 
-.future-date {
-    outline: 3px solid rgb(95, 95, 95);
+.day-number {
+    border-radius: 20px;
+    padding: 0 10px;
+    display: inline;
 }
 
-.frist-date {
-    border: 10px solid rgb(240, 255, 32) !important;
+.odd-month-date .day-number {
+    background-color: rgba(255, 255, 255, 0.8);
 }
+.even-month-date .day-number {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
 
 .today {
     /* border: 5px solid r gb(255, 0, 0) !important; */
@@ -78,13 +90,6 @@
     z-index: 10;
 }
 
-.day-number {
-    /* padding-left: 10px; */
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 20px;
-    padding: 0 10px;
-    display: inline;
-}
 
 .hidden {
     border: 1px solid rgb(255, 0, 0);
@@ -134,8 +139,5 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /* width: 3vw;
-    height: 3vw; */
-    /* margin: 10px; */
-    font-size: 3rem;
+    font-size: 2rem;
 }
