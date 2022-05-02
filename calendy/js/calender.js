@@ -34,7 +34,7 @@ function getCellTitle(date) {
 function getCellClasses(date) {
     let classes = 'col-md-1 cell';
     let today = moment();
-    if(date.format('M')%2){
+    if (date.format('M') % 2) {
         classes = classes + ' even-month-date'
     } else {
         classes = classes + ' odd-month-date'
@@ -43,32 +43,27 @@ function getCellClasses(date) {
     if (!date.isBefore(today, 'day') && !date.isAfter(today, 'day')) {
         classes = classes + ' today'
     }
-    
+
     return classes;
 }
 
 
 document.addEventListener('scroll', function(e) {
     fullHeight = document.body.scrollHeight;
-    monthHeight = fullHeight / 12;
     lastKnownScrollPosition = window.scrollY;
-    currentMonth = Math.floor(lastKnownScrollPosition / monthHeight) + 1
-    currentMonth =("0" + currentMonth).slice(-2);
-    console.log(
-        // fullHeight,
-        // monthHeight,
-        // lastKnownScrollPosition,
-        currentMonth
-    );
+    windowHeight = document.documentElement.clientWidth;
+    monthHeight = fullHeight / 12;
+    x = 2 * (windowHeight - monthHeight);
+    currentMonthPosition = Math.floor((lastKnownScrollPosition + x) / monthHeight) + 1
+    currentMonthPosition = ("0" + currentMonthPosition).slice(-2);
 
-    $('.cell').forEach(function(item){
+    $('.cell').forEach(function(item) {
         day = $(item).attr('data-date');
-        // console.log($(item).attr('data-date'));
-        if (day){
-            
-            if(day.startsWith('2022-'+ currentMonth)){
+        if (day) {
+
+            if (day.startsWith('2022-' + currentMonthPosition)) {
                 $(item).removeClass('unfocused');
-            
+
             } else {
                 $(item).addClass('unfocused');
             }
