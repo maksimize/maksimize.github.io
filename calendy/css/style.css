@@ -50,49 +50,12 @@
 .days .cell {
     height: 12em;
     border: 10px solid white;
-}
-.even-month-date {
-    /*border: 10px solid rgb(240, 240, 240) !important;*/
-    border: 10px solid rgb(127 127 127 / 58%) !important;
-    outline: 3px solid rgb(255, 255, 255);
-
-}
-.odd-month-date {
-    border: 10px solid rgb(255 255 255 / 80%) !important;
     outline: 3px solid rgb(95, 95, 95);
+
 }
 
-.day-number {
-    border-radius: 20px;
-    padding: 0 10px;
-    display: inline;
-}
-
-.odd-month-date .day-number {
-    background-color: rgba(255, 255, 255, 0.8);
-}
-.even-month-date .day-number {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-}
-
-
-.today {
-    /* border: 5px solid r gb(255, 0, 0) !important; */
-    border: 10px solid rgba(255, 0, 0, 0.6) !important;
-    outline: 3px solid rgb(95, 95, 95);
-}
-
-.header {
-    background: rgb(200, 200, 200);
-    width: 98%;
-    position: fixed;
-    z-index: 10;
-}
-
-
-.hidden {
-    border: 1px solid rgb(255, 0, 0);
+.days .unfocused{
+    opacity: 0.25;
 }
 
 .flag {
@@ -124,6 +87,42 @@
     right: 0;
 }
 
+.day-number {
+    border-radius: 20px;
+    padding: 0 10px;
+    display: inline;
+}
+
+.odd-month-date {
+    outline: 3px solid #17a2b8 !important;
+
+}
+.odd-month-date .day-number {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.even-month-date .day-number {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+.today {
+    border: 10px solid rgba(255, 0, 0, 0.6) !important;
+    outline: 3px solid rgb(95, 95, 95);
+}
+
+.header {
+    background: rgb(200, 200, 200);
+    width: 98%;
+    position: fixed;
+    z-index: 10;
+}
+
+
+.hidden {
+    border: 1px solid rgb(255, 0, 0);
+}
+
+
 .doodles {
     position: absolute;
     bottom: 0.2em;
@@ -135,6 +134,10 @@
     padding: 0 10px;
 }
 
+.even-month-date .doodles {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
 .doodle {
     background-size: cover;
     background-repeat: no-repeat;
