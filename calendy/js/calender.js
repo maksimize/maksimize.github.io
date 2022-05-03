@@ -51,9 +51,10 @@ function getCellClasses(date) {
 document.addEventListener('scroll', function(e) {
     fullHeight = document.body.scrollHeight;
     lastKnownScrollPosition = window.scrollY;
-    windowHeight = document.documentElement.clientWidth;
+    windowHeight = document.documentElement.clientHeight;
     monthHeight = fullHeight / 12;
-    x = 2 * (windowHeight - monthHeight);
+    console.log(windowHeight, monthHeight)
+    x = 1 * (windowHeight - monthHeight) / 3;
     currentMonthPosition = Math.floor((lastKnownScrollPosition + x) / monthHeight) + 1
     currentMonthPosition = ("0" + currentMonthPosition).slice(-2);
 
