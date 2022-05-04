@@ -5,10 +5,7 @@ const queryStringYear = urlParams.get('year');
 const calendarStartDay = moment(queryStringYear).startOf('year').startOf('isoWeek')
 const calendarEndDay = moment(queryStringYear).endOf('year').endOf('isoWeek')
 
-// String.prototype.startsWith = function(needle)
-// {
-//     return this.indexOf(needle) === 0;
-// };
+
 
 for (var m = moment(calendarStartDay); m.diff(calendarEndDay, 'days') <= -1; m.add(1, 'days')) {
     let el = $('<div>')
@@ -48,26 +45,26 @@ function getCellClasses(date) {
 }
 
 
-document.addEventListener('scroll', function(e) {
-    fullHeight = document.body.scrollHeight;
-    lastKnownScrollPosition = window.scrollY;
-    windowHeight = document.documentElement.clientHeight;
-    monthHeight = fullHeight / 12;
-    console.log(windowHeight, monthHeight)
-    x = 1 * (windowHeight - monthHeight) / 3;
-    currentMonthPosition = Math.floor((lastKnownScrollPosition + x) / monthHeight) + 1
-    currentMonthPosition = ("0" + currentMonthPosition).slice(-2);
+// document.addEventListener('scroll', function(e) {
+//     fullHeight = document.body.scrollHeight;
+//     lastKnownScrollPosition = window.scrollY;
+//     windowHeight = document.documentElement.clientHeight;
+//     monthHeight = fullHeight / 12;
+//     console.log(windowHeight, monthHeight)
+//     x = 1 * (windowHeight - monthHeight) / 3;
+//     currentMonthPosition = Math.floor((lastKnownScrollPosition + x) / monthHeight) + 1
+//     currentMonthPosition = ("0" + currentMonthPosition).slice(-2);
 
-    $('.cell').forEach(function(item) {
-        day = $(item).attr('data-date');
-        if (day) {
+//     $('.cell').forEach(function(item) {
+//         day = $(item).attr('data-date');
+//         if (day) {
 
-            if (day.startsWith('2022-' + currentMonthPosition)) {
-                $(item).removeClass('unfocused');
+//             if (day.startsWith('2022-' + currentMonthPosition)) {
+//                 $(item).removeClass('unfocused');
 
-            } else {
-                $(item).addClass('unfocused');
-            }
-        }
-    });
-});
+//             } else {
+//                 $(item).addClass('unfocused');
+//             }
+//         }
+//     });
+// });
