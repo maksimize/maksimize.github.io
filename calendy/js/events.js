@@ -10,7 +10,14 @@ $.ajax({
             if (item.summary.startsWith('Fly: ')) {
                 events.travels.push({
                     country: item.summary.match(/\p{Emoji}+/gu)[0],
-                    date: moment(item.start.dateTime)
+                    date: moment(item.start.dateTime),
+                    mean: '🛫'
+                });
+            } else if (item.summary.startsWith('Drive: ')) {
+                events.travels.push({
+                    country: item.summary.match(/\p{Emoji}+/gu)[0],
+                    date: moment(item.start.dateTime),
+                    mean: '🚘'
                 });
             } else {
                 events.items.push({
@@ -46,7 +53,7 @@ function fillEvents(events) {
 }
 
 function fillCountry(flyIn, flyOut) {
-    addDoodle('🛫', flyIn.date);
+    addDoodle(flyIn.mean, flyIn.date);
     for (var m = moment(flyIn.date); m.diff(flyOut.date, 'days') <= 0; m.add(1, 'days')) {
         el = getDateElement(m.format('YYYY-MM-DD')).addClass('flag');
         if (m.isSame(flyOut.date)) {
