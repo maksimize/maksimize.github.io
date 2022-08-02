@@ -10,6 +10,9 @@
 .flag-🇫🇷 {
    background-image: url('../img/flags/🇫🇷.png');
 }
+.flag-🇬🇷 {
+   background-image: url('../img/flags/🇬🇷.png');
+}
 .flag-🇭🇷 {
    background-image: url('../img/flags/🇭🇷.png');
 }
@@ -48,6 +51,12 @@
 }
 .flag-🇦🇹-🇫🇷:after {
    background-image: url('../img/flags/🇫🇷.png');
+}
+.flag-🇦🇹-🇬🇷:before {
+   background-image: url('../img/flags/🇦🇹.png');
+}
+.flag-🇦🇹-🇬🇷:after {
+   background-image: url('../img/flags/🇬🇷.png');
 }
 .flag-🇦🇹-🇭🇷:before {
    background-image: url('../img/flags/🇦🇹.png');
@@ -103,6 +112,12 @@
 .flag-🇪🇬-🇫🇷:after {
    background-image: url('../img/flags/🇫🇷.png');
 }
+.flag-🇪🇬-🇬🇷:before {
+   background-image: url('../img/flags/🇪🇬.png');
+}
+.flag-🇪🇬-🇬🇷:after {
+   background-image: url('../img/flags/🇬🇷.png');
+}
 .flag-🇪🇬-🇭🇷:before {
    background-image: url('../img/flags/🇪🇬.png');
 }
@@ -156,6 +171,12 @@
 }
 .flag-🇪🇸-🇫🇷:after {
    background-image: url('../img/flags/🇫🇷.png');
+}
+.flag-🇪🇸-🇬🇷:before {
+   background-image: url('../img/flags/🇪🇸.png');
+}
+.flag-🇪🇸-🇬🇷:after {
+   background-image: url('../img/flags/🇬🇷.png');
 }
 .flag-🇪🇸-🇭🇷:before {
    background-image: url('../img/flags/🇪🇸.png');
@@ -211,6 +232,12 @@
 .flag-🇫🇷-🇫🇷:after {
    background-image: url('../img/flags/🇫🇷.png');
 }
+.flag-🇫🇷-🇬🇷:before {
+   background-image: url('../img/flags/🇫🇷.png');
+}
+.flag-🇫🇷-🇬🇷:after {
+   background-image: url('../img/flags/🇬🇷.png');
+}
 .flag-🇫🇷-🇭🇷:before {
    background-image: url('../img/flags/🇫🇷.png');
 }
@@ -241,6 +268,66 @@
 .flag-🇫🇷-🇹🇷:after {
    background-image: url('../img/flags/🇹🇷.png');
 }
+.flag-🇬🇷-🇦🇹:before {
+   background-image: url('../img/flags/🇬🇷.png');
+}
+.flag-🇬🇷-🇦🇹:after {
+   background-image: url('../img/flags/🇦🇹.png');
+}
+.flag-🇬🇷-🇪🇬:before {
+   background-image: url('../img/flags/🇬🇷.png');
+}
+.flag-🇬🇷-🇪🇬:after {
+   background-image: url('../img/flags/🇪🇬.png');
+}
+.flag-🇬🇷-🇪🇸:before {
+   background-image: url('../img/flags/🇬🇷.png');
+}
+.flag-🇬🇷-🇪🇸:after {
+   background-image: url('../img/flags/🇪🇸.png');
+}
+.flag-🇬🇷-🇫🇷:before {
+   background-image: url('../img/flags/🇬🇷.png');
+}
+.flag-🇬🇷-🇫🇷:after {
+   background-image: url('../img/flags/🇫🇷.png');
+}
+.flag-🇬🇷-🇬🇷:before {
+   background-image: url('../img/flags/🇬🇷.png');
+}
+.flag-🇬🇷-🇬🇷:after {
+   background-image: url('../img/flags/🇬🇷.png');
+}
+.flag-🇬🇷-🇭🇷:before {
+   background-image: url('../img/flags/🇬🇷.png');
+}
+.flag-🇬🇷-🇭🇷:after {
+   background-image: url('../img/flags/🇭🇷.png');
+}
+.flag-🇬🇷-🇵🇱:before {
+   background-image: url('../img/flags/🇬🇷.png');
+}
+.flag-🇬🇷-🇵🇱:after {
+   background-image: url('../img/flags/🇵🇱.png');
+}
+.flag-🇬🇷-🇸🇪:before {
+   background-image: url('../img/flags/🇬🇷.png');
+}
+.flag-🇬🇷-🇸🇪:after {
+   background-image: url('../img/flags/🇸🇪.png');
+}
+.flag-🇬🇷-🇸🇮:before {
+   background-image: url('../img/flags/🇬🇷.png');
+}
+.flag-🇬🇷-🇸🇮:after {
+   background-image: url('../img/flags/🇸🇮.png');
+}
+.flag-🇬🇷-🇹🇷:before {
+   background-image: url('../img/flags/🇬🇷.png');
+}
+.flag-🇬🇷-🇹🇷:after {
+   background-image: url('../img/flags/🇹🇷.png');
+}
 .flag-🇭🇷-🇦🇹:before {
    background-image: url('../img/flags/🇭🇷.png');
 }
@@ -264,6 +351,12 @@
 }
 .flag-🇭🇷-🇫🇷:after {
    background-image: url('../img/flags/🇫🇷.png');
+}
+.flag-🇭🇷-🇬🇷:before {
+   background-image: url('../img/flags/🇭🇷.png');
+}
+.flag-🇭🇷-🇬🇷:after {
+   background-image: url('../img/flags/🇬🇷.png');
 }
 .flag-🇭🇷-🇭🇷:before {
    background-image: url('../img/flags/🇭🇷.png');
@@ -319,6 +412,12 @@
 .flag-🇵🇱-🇫🇷:after {
    background-image: url('../img/flags/🇫🇷.png');
 }
+.flag-🇵🇱-🇬🇷:before {
+   background-image: url('../img/flags/🇵🇱.png');
+}
+.flag-🇵🇱-🇬🇷:after {
+   background-image: url('../img/flags/🇬🇷.png');
+}
 .flag-🇵🇱-🇭🇷:before {
    background-image: url('../img/flags/🇵🇱.png');
 }
@@ -372,6 +471,12 @@
 }
 .flag-🇸🇪-🇫🇷:after {
    background-image: url('../img/flags/🇫🇷.png');
+}
+.flag-🇸🇪-🇬🇷:before {
+   background-image: url('../img/flags/🇸🇪.png');
+}
+.flag-🇸🇪-🇬🇷:after {
+   background-image: url('../img/flags/🇬🇷.png');
 }
 .flag-🇸🇪-🇭🇷:before {
    background-image: url('../img/flags/🇸🇪.png');
@@ -427,6 +532,12 @@
 .flag-🇸🇮-🇫🇷:after {
    background-image: url('../img/flags/🇫🇷.png');
 }
+.flag-🇸🇮-🇬🇷:before {
+   background-image: url('../img/flags/🇸🇮.png');
+}
+.flag-🇸🇮-🇬🇷:after {
+   background-image: url('../img/flags/🇬🇷.png');
+}
 .flag-🇸🇮-🇭🇷:before {
    background-image: url('../img/flags/🇸🇮.png');
 }
@@ -480,6 +591,12 @@
 }
 .flag-🇹🇷-🇫🇷:after {
    background-image: url('../img/flags/🇫🇷.png');
+}
+.flag-🇹🇷-🇬🇷:before {
+   background-image: url('../img/flags/🇹🇷.png');
+}
+.flag-🇹🇷-🇬🇷:after {
+   background-image: url('../img/flags/🇬🇷.png');
 }
 .flag-🇹🇷-🇭🇷:before {
    background-image: url('../img/flags/🇹🇷.png');
