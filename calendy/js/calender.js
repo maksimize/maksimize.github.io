@@ -44,27 +44,20 @@ function getCellClasses(date) {
     return classes;
 }
 
+function smoothScroll(el, to, duration) {
+    if (duration < 0) {
+        return;
+    }
+    var difference = to - $(window).scrollTop();
+    var perTick = difference / duration * 10;
+    this.scrollToTimerCache = setTimeout(function() {
+        if (!isNaN(parseInt(perTick, 10))) {
+            window.scrollTo(0, $(window).scrollTop() + perTick);
+            smoothScroll(el, to, duration - 10);
+        }
+    }.bind(this), 10);
+}
 
-// document.addEventListener('scroll', function(e) {
-//     fullHeight = document.body.scrollHeight;
-//     lastKnownScrollPosition = window.scrollY;
-//     windowHeight = document.documentElement.clientHeight;
-//     monthHeight = fullHeight / 12;
-//     console.log(windowHeight, monthHeight)
-//     x = 1 * (windowHeight - monthHeight) / 3;
-//     currentMonthPosition = Math.floor((lastKnownScrollPosition + x) / monthHeight) + 1
-//     currentMonthPosition = ("0" + currentMonthPosition).slice(-2);
-
-//     $('.cell').forEach(function(item) {
-//         day = $(item).attr('data-date');
-//         if (day) {
-
-//             if (day.startsWith('2022-' + currentMonthPosition)) {
-//                 $(item).removeClass('unfocused');
-
-//             } else {
-//                 $(item).addClass('unfocused');
-//             }
-//         }
-//     });
-// });
+window.addEventListener('load', (event) => {
+    smoothScroll($(window), (moment().week() * 180), 200);
+});
